@@ -14,13 +14,13 @@
   <!-- ========================================================= -->
   <!--                          插件图标                         -->
   <!-- ========================================================= -->
-  <IconUrl DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://academic-compass-office-addin.vercel.app/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://academic-compass-office-addin.vercel.app/assets/icon-64.png"/>
   
   <!-- ========================================================= -->
   <!--                         支持与法律信息                      -->
   <!-- ========================================================= -->
-  <SupportUrl DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/support.html"/>
+  <SupportUrl DefaultValue="https://academic-compass-office-addin.vercel.app/support.html"/>
   <AppDomains>
     <AppDomain>https://academic-compass-backend-885033581194.us-central1.run.app</AppDomain>
   </AppDomains>
@@ -36,7 +36,7 @@
   <!--                         插件主体设置                        -->
   <!-- ========================================================= -->
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/taskpane.html"/>
+    <SourceLocation DefaultValue="https://academic-compass-office-addin.vercel.app/taskpane.html"/>
   </DefaultSettings>
   
   <!-- ========================================================= -->
@@ -90,14 +90,14 @@
     </Hosts>
     <Resources>
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://academic-compass-office-addin.vercel.app/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://academic-compass-office-addin.vercel.app/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://academic-compass-office-addin.vercel.app/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://github.com/Schlaflied/academic-compass-office-addin"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/taskpane.html"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://academic-compass-office-addin.vercel.app/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://academic-compass-office-addin.vercel.app/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="学术罗盘已成功加载!"/>
@@ -111,4 +111,3 @@
     </Resources>
   </VersionOverrides>
 </OfficeApp>
-
