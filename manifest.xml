@@ -4,31 +4,24 @@
   <!-- ========================================================= -->
   <!--                        插件基本信息                         -->
   <!-- ========================================================= -->
-  <!-- 这个ID是你自己生成的，保持不变，非常好！ -->
   <Id>717cb144-2c58-4df8-b7dc-8bc7952d117b</Id>
   <Version>1.0.0.0</Version>
-  <!-- 【已修改】把提供者从 Contoso 改成了你的名字 -->
   <ProviderName>Syna</ProviderName>
-  <!-- 【已修改】把默认语言改成了简体中文 -->
   <DefaultLocale>zh-CN</DefaultLocale>
   <DisplayName DefaultValue="学术罗盘 Academic Compass"/>
-  <!-- 【已修改】更新了插件的描述 -->
   <Description DefaultValue="AI 驱动的学术与职业生涯规划工具，帮助学生分析专业前景与就业可能性。"/>
   
   <!-- ========================================================= -->
   <!--                          插件图标                         -->
-  <!--  TODO: 把下面的 YOUR_VERCEL_URL 替换成你部署后得到的 Vercel 链接 -->
   <!-- ========================================================= -->
-  <IconUrl DefaultValue="https://YOUR_VERCEL_URL/assets/icon-32.png"/>
-  <HighResolutionIconUrl DefaultValue="https://YOUR_VERCEL_URL/assets/icon-64.png"/>
+  <IconUrl DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-32.png"/>
+  <HighResolutionIconUrl DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-64.png"/>
   
   <!-- ========================================================= -->
   <!--                         支持与法律信息                      -->
-  <!--  TODO: 把下面的 YOUR_VERCEL_URL 替换成你部署后得到的 Vercel 链接 -->
   <!-- ========================================================= -->
-  <SupportUrl DefaultValue="https://YOUR_VERCEL_URL/support.html"/>
+  <SupportUrl DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/support.html"/>
   <AppDomains>
-    <!-- 【已修改】添加了你的后端 API 地址，这是必需的！ -->
     <AppDomain>https://academic-compass-backend-885033581194.us-central1.run.app</AppDomain>
   </AppDomains>
   
@@ -41,10 +34,9 @@
   
   <!-- ========================================================= -->
   <!--                         插件主体设置                        -->
-  <!--  TODO: 把下面的 YOUR_VERCEL_URL 替换成你部署后得到的 Vercel 链接 -->
   <!-- ========================================================= -->
   <DefaultSettings>
-    <SourceLocation DefaultValue="https://YOUR_VERCEL_URL/taskpane.html"/>
+    <SourceLocation DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/taskpane.html"/>
   </DefaultSettings>
   
   <!-- ========================================================= -->
@@ -97,18 +89,16 @@
       </Host>
     </Hosts>
     <Resources>
-      <!-- TODO: 把下面所有的 localhost:3000 替换成你部署后得到的 Vercel 链接 -->
       <bt:Images>
-        <bt:Image id="Icon.16x16" DefaultValue="https://YOUR_VERCEL_URL/assets/icon-16.png"/>
-        <bt:Image id="Icon.32x32" DefaultValue="https://YOUR_VERCEL_URL/assets/icon-32.png"/>
-        <bt:Image id="Icon.80x80" DefaultValue="https://YOUR_VERCEL_URL/assets/icon-80.png"/>
+        <bt:Image id="Icon.16x16" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-16.png"/>
+        <bt:Image id="Icon.32x32" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-32.png"/>
+        <bt:Image id="Icon.80x80" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/assets/icon-80.png"/>
       </bt:Images>
       <bt:Urls>
-        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://www.contoso.com/help"/> <!-- 你可以换成自己的帮助页面 -->
-        <bt:Url id="Commands.Url" DefaultValue="https://YOUR_VERCEL_URL/commands.html"/>
-        <bt:Url id="Taskpane.Url" DefaultValue="https://YOUR_VERCEL_URL/taskpane.html"/>
+        <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://github.com/Schlaflied/academic-compass-office-addin"/>
+        <bt:Url id="Commands.Url" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/commands.html"/>
+        <bt:Url id="Taskpane.Url" DefaultValue="https://academic-compass-office-addin-5vvl.vercel.app/taskpane.html"/>
       </bt:Urls>
-      <!-- 【已修改】更新了所有按钮和提示的文本，让它更符合你的插件 -->
       <bt:ShortStrings>
         <bt:String id="GetStarted.Title" DefaultValue="学术罗盘已成功加载!"/>
         <bt:String id="CommandsGroup.Label" DefaultValue="学术罗盘"/>
@@ -121,3 +111,4 @@
     </Resources>
   </VersionOverrides>
 </OfficeApp>
+
