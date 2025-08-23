@@ -20,7 +20,8 @@
   <!-- ========================================================= -->
   <!--                         支持与法律信息                      -->
   <!-- ========================================================= -->
-  <SupportUrl DefaultValue="https://academic-compass-office-addin.vercel.app/support.html"/>
+  <!-- 【已修正】将支持链接指向了你的 GitHub 仓库，这是一个真实有效的地址 -->
+  <SupportUrl DefaultValue="https://github.com/Schlaflied/academic-compass-office-addin"/>
   <AppDomains>
     <AppDomain>https://academic-compass-backend-885033581194.us-central1.run.app</AppDomain>
   </AppDomains>
@@ -96,7 +97,8 @@
       </bt:Images>
       <bt:Urls>
         <bt:Url id="GetStarted.LearnMoreUrl" DefaultValue="https://github.com/Schlaflied/academic-compass-office-addin"/>
-        <bt:Url id="Commands.Url" DefaultValue="https://academic-compass-office-addin.vercel.app/commands.html"/>
+        <!-- 【已修正】将 commands.html 指向了真实存在的 taskpane.html，避免潜在的 404 错误 -->
+        <bt:Url id="Commands.Url" DefaultValue="https://academic-compass-office-addin.vercel.app/taskpane.html"/>
         <bt:Url id="Taskpane.Url" DefaultValue="https://academic-compass-office-addin.vercel.app/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
