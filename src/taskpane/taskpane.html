@@ -20,14 +20,16 @@
                         <h1 data-key="title">输入信息</h1>
                         <p class="subtitle" data-key="subtitle">AI将分析你的未来可能性</p>
                         
+                        <!-- 【已修改】将单行 input 改为多行 textarea，并设置初始高度为 2 行 -->
                         <div class="form-group">
                             <label for="major-input" data-key="major_label">你的专业/学位</label>
-                            <input type="text" id="major-input" data-key-placeholder="major_placeholder">
+                            <textarea id="major-input" rows="2" data-key-placeholder="major_placeholder"></textarea>
                         </div>
 
+                        <!-- 【已修改】将单行 input 改为多行 textarea，并设置初始高度为 2 行 -->
                         <div class="form-group">
                             <label for="interests-input" data-key="interests_label">研究方向或技能 (可选)</label>
-                            <input type="text" id="interests-input" data-key-placeholder="interests_placeholder">
+                            <textarea id="interests-input" rows="2" data-key-placeholder="interests_placeholder"></textarea>
                         </div>
 
                         <div class="form-group">
@@ -58,7 +60,7 @@
             </section>
         </div>
 
-        <!-- 【v10 修正】右侧工具栏，已移除返回和主题切换按钮 -->
+        <!-- 右侧工具栏 -->
         <div class="actions-bar">
             <div class="lang-toggle-vertical" id="lang-toggle">
                 <button class="lang-button" data-lang="zh-CN" title="简体中文">简</button>
@@ -74,3 +76,4 @@
     <script type="text/javascript" src="taskpane.js"></script>
 </body>
 </html>
+
