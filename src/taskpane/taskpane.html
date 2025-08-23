@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="taskpane.css">
+    <!-- Office JS 脚本必须在最前面 -->
+    <script type="text/javascript" src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
+</head>
+<body class="ms-font-m ms-welcome">
+    <div class="sidebar-layout">
+        <!-- 左侧主内容区 -->
+        <div class="content-wrapper">
+            <div id="top-panel" class="top-panel">
+                <section class="panel input-panel">
+                    <div>
+                        <header class="header">
+                            <div class="logo" id="logo">🧭 学术罗盘</div>
+                        </header>
+                        <h1 data-key="title">输入信息</h1>
+                        <p class="subtitle" data-key="subtitle">AI将分析你的未来可能性</p>
+                        
+                        <div class="form-group">
+                            <label for="major-input" data-key="major_label">你的专业/学位</label>
+                            <input type="text" id="major-input" data-key-placeholder="major_placeholder">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="interests-input" data-key="interests_label">研究方向或技能 (可选)</label>
+                            <input type="text" id="interests-input" data-key-placeholder="interests_placeholder">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="resume-input" data-key="resume_label">我的简历 / 个人简介 (可选)</label>
+                            <textarea id="resume-input" rows="4" data-key-placeholder="resume_placeholder"></textarea>
+                        </div>
+                    </div>
+                    
+                    <button class="analyze-button" id="analyze-button">
+                        <span data-key="button_text">开始分析</span>
+                    </button>
+                </section>
+            </div>
+
+            <div class="resizer" id="resizer"></div>
+
+            <section class="panel output-panel">
+                <a href="https://buymeacoffee.com/200203sytty" target="_blank" class="supporter-link">
+                    <span class="coffee-icon">☕️</span>
+                    <span data-key="support_text">请开发者喝杯咖啡</span>
+                </a>
+
+                <div id="result-container">
+                    <h2 data-key="result_placeholder_title">分析报告</h2>
+                    <p data-key="result_placeholder_text" class="placeholder-text">（请输入专业后点击分析）</p>
+                </div>
+                <div class="sources-container" id="sources-container"></div>
+            </section>
+        </div>
+
+        <!-- 【v10 修正】右侧工具栏，已移除返回和主题切换按钮 -->
+        <div class="actions-bar">
+            <div class="lang-toggle-vertical" id="lang-toggle">
+                <button class="lang-button" data-lang="zh-CN" title="简体中文">简</button>
+                <button class="lang-button" data-lang="zh-TW" title="繁體中文">繁</button>
+                <button class="lang-button" data-lang="en" title="English">EN</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- 将所有本地脚本的加载移到 body 的末尾 -->
+    <script src="lib/marked.min.js"></script>
+    <script src="lib/purify.min.js"></script>
+    <script type="text/javascript" src="taskpane.js"></script>
+</body>
+</html>

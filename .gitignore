@@ -1,0 +1,17 @@
+# 依赖文件夹
+node_modules/
+
+# 构建产物文件夹
+dist/
+
+# 日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# 编辑器配置文件
+.vscode/
+
+# 操作系统生成的文件
+.DS_Store
+Thumbs.db
