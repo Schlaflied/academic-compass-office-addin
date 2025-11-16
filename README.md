@@ -6,12 +6,12 @@ This is a Task Pane Add-in designed specifically for **Microsoft Word**. It seam
 
 ## 核心功能 / Core Features
 
-* **深度集成 Word / Deep Word Integration:** 插件作为 Word 的侧边任务窗格运行，并通过 Office.js 确保在 Word 环境下正常运行。
-* **简历/专业分析 / Resume & Major Analysis:** 用户可以直接在任务窗格内输入或粘贴专业、技能和简历文本，一键启动生涯分析。
-* **多语言 UI / Multilingual UI:** 界面支持简体中文、繁体中文和英文，并能保存用户选择的语言设置。
-* **可调整面板 / Resizable Panel:** 任务窗格 UI 具备拖动分割线以调整输入和输出区域高度的功能，优化用户体验。
-* **AI 报告与引用 / AI Reporting & Citation:** 插件连接到 Academic Compass 后端 API，获取 Gemini 生成的结构化报告，并使用 Marked.js 和 DOMPurify 安全地渲染报告内容和引用来源。
-* **设置持久化 / Settings Persistence:** 使用 Office.js 的 `document.settings` 和 `localStorage` 来保存主题、语言和面板高度等设置。
+* **深度集成 Word / Deep Word Integration:** 插件作为 Word 的侧边任务窗格运行，并通过 Office.js 确保在 Word 环境下正常运行。/ The add-in runs as a sidebar Task Pane in Word, with **Office.js** ensuring proper functionality within the Word environment.
+* **简历/专业分析 / Resume & Major Analysis:** 用户可以直接在任务窗格内输入或粘贴专业、技能和简历文本，一键启动生涯分析。/ Users can directly input or paste their major, skills, and resume text within the Task Pane to launch a career analysis with a single click.
+* **多语言 UI / Multilingual UI:** 界面支持简体中文、繁体中文和英文，并能保存用户选择的语言设置。/ The interface supports Simplified Chinese, Traditional Chinese, and English, and is capable of saving the user's preferred language setting.
+* **可调整面板 / Resizable Panel:** 任务窗格 UI 具备拖动分割线以调整输入和输出区域高度的功能，优化用户体验。/ The Task Pane UI features a draggable divider to adjust the height of the input and output areas for an optimized user experience.
+* **AI 报告与引用 / AI Reporting & Citation:** 插件连接到 Academic Compass 后端 API，获取 Gemini 生成的结构化报告，并使用 Marked.js 和 DOMPurify 安全地渲染报告内容和引用来源。/ The add-in connects to the Academic Compass backend API to retrieve a structured, Gemini-generated report, which is then securely rendered with citations using Marked.js and DOMPurify.
+* **设置持久化 / Settings Persistence:** 使用 Office.js 的 `document.settings` 和 `localStorage` 来保存主题、语言和面板高度等设置。/ Utilizes Office.js's `document.settings` and `localStorage` to persist user preferences such as theme, language, and panel height.
 
 ## 技术栈 / Tech Stack
 
